@@ -31,7 +31,8 @@ type Config struct {
 	Auth    string
 	Dh      string
 
-	Server              string
+	Network             string
+	Netmask             string
 	IfconfigPoolPersist string
 	Keepalive           string
 	MaxClients          int

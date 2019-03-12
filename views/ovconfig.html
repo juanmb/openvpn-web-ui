@@ -79,15 +79,21 @@
         <label for="name">Dh</label>
         <input type="text" class="form-control" name="Dh" id="Dh" placeholder=""
           value="{{ .Settings.Dh }}">
-        <span id="helpBlock" class="help-block">Diffie hellman parameters</span>
+        <span id="helpBlock" class="help-block">Diffie Hellman parameters</span>
       </div>
 
       <div class="form-group">
-        <label for="name">Server</label>
-        <input type="text" class="form-control" name="Server" id="Server" placeholder=""
-          value="{{ .Settings.Server }}">
-        <span id="helpBlock" class="help-block">Configures server mode and supply a VPN subnet
-            for OpenVPN to draw client addresses from.</span>
+        <label for="name">Network</label>
+        <input type="text" class="form-control" name="Network" id="Network" placeholder=""
+          value="{{ .Settings.Network }}">
+        <span id="helpBlock" class="help-block">Network of the VPN subnet</span>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Netmask</label>
+        <input type="text" class="form-control" name="Netmask" id="Netmask" placeholder=""
+          value="{{ .Settings.Netmask }}">
+        <span id="helpBlock" class="help-block">Netmask of the VPN subnet</span>
       </div>
 
       <div class="form-group">
